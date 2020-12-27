@@ -19,16 +19,19 @@
 }
 
 .nav-item {
-	padding-right: 0.5rem;
+	padding-right: 1rem;
+	padding-left: 1.5rem;
 }
 
 .intro-img{
 	position: relative;
+	min-width: 70%;
+	min-height: 70%;
 }
 
 img.logo{
-	max-width:70%;
-	max-height:70%;
+	max-width: 70%;
+	max-height: 70%;
 }
 
 .heading-content{
@@ -70,8 +73,8 @@ img.logo{
 }
 
 .about-img{
-	width: 80%;
-	height: 80%;
+	max-width: 80%;
+	min-width: 80%;
 }
 
 .img-hover-zoom {
