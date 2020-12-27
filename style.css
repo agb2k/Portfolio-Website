@@ -1,0 +1,85 @@
+:root{
+	--ff-primary: 'Open Sans', sans-serif;
+	--ff-secondary: 'Staatliches', cursive;
+
+	--fw-reg: 300;
+	--fw-bold: 900;
+
+	--clr-light: #fff;
+	--clr-dark: #303030;
+	--clr-accent: #16e0bd;
+
+	--fs-h1: 3rem;
+	--fs-h2: 2.25rem;
+	--fs-h3: 1.25rem;
+	--fs-body: 1rem;
+
+	background: #333333;
+
+}
+
+.nav-item {
+	padding-right: 0.5rem;
+}
+
+.intro-img{
+	position: relative;
+}
+
+img.logo{
+	max-width:70%;
+	max-height:70%;
+}
+
+.heading-content{
+	position: absolute;
+	top: 35%;
+	width: 100%;
+	
+}
+
+.heading-content h1{
+	font-size: 5vw;
+	font-weight: bolder;
+}
+
+.heading-content h2{
+	font-size: 3vw;
+}
+
+.heading-content h3{
+	font-size: 3vw;
+}
+
+.multicolouredtext {
+	background-image: linear-gradient(to left, #28bd03, #fff200, #ff0000);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	
+  }
+
+
+.multicolouredtext2{
+	background-image: linear-gradient(to left, #ff0099, #a1678b);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.about-img{
+	width: 80%;
+	height: 80%;
+	overflow: hidden;
+}
+
+.about-img--zoom-n-rotate img {
+	transition: transform .5s ease-in-out;
+}
+
+.about-img--zoom-n-rotate:hover img {
+	transform: scale(2) rotate(25deg);
+}
+  
