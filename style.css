@@ -36,7 +36,7 @@ img.logo{
 
 .heading-content{
 	position: absolute;
-	top: 35%;
+	top: 40%;
 	width: 100%;
 	
 }
@@ -89,4 +89,9 @@ img.logo{
 .img-hover-zoom--xyz:hover img {
 	filter: grayscale(0);
   	transform: scale(1.1);
+}
+
+#pausePlay {
+	padding: 0.7rem;
+	font-size: 8vw;
 }
