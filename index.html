@@ -39,9 +39,9 @@
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 					  <li><a class="dropdown-item" href="#education">Education</a></li>
-					  <li><hr class="dropdown-divider"></li>
+					  <li></li>
 					  <li><a class="dropdown-item" href="#experience">Experience</a></li>
-					  <li><hr class="dropdown-divider"></li>
+					  <li></li>
 					  <li><a class="dropdown-item" href="#projects">Projects</a></li>
 					</ul>
 				  </li>
@@ -51,7 +51,7 @@
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 					  <li><a class="dropdown-item" href="#">Linkedin</a></li>
-					  <li><hr class="dropdown-divider"></li>
+					  <li></li>
 					  <li><a class="dropdown-item" href="#">GitHub</a></li>
 					</ul>
 				  </li>
@@ -64,15 +64,16 @@
 			</div>
 		</nav>
 
-		<div class="intro-img" id="intro">
-			<img src="typing1.jpg" class="img-fluid">
+		<div class="parallax-img bg-dark" id="intro">
 			<div class="heading-content text-center" >
 				<h2 class="intro-text"><span class="multicolouredtext2">Hey there!</span></h2>
 				<h1 class="intro-text"><span class="multicolouredtext">I'm Abhinav</span></h1>
 				<h3 class="intro-text"><span class="multicolouredtext">Student/Developer</span></h3>
-				<i onclick="playPause() " class="fas fa-pause-circle fa-4x" id="pausePlay"></i>				
+				<i onclick="playPause()" class="fas fa-pause-circle fa-4x" id="pausePlay"></i>				
 			</div>
 		</div>
+
+	
 		
 
 	</header>
@@ -80,43 +81,57 @@
 	<section>
 
 		
+		
 	<div class="container-fluid bg-dark text-light"  >
 		<div class="row justify-content-center" id="about-me">
-			<hr class="dropdown-divider">
-			<div class="col-6 col-sm-3 align-items-center">
+			
+			<div class="col-6 col-sm-3  align-items-center">
 				<p>I'm a driven and independent 2nd year Computer Science student with knowledge & experience programming in Full Stack Web Development, Python, C, Java & SQL with experience in the IT Field</p>
 			</div>
-			<div class="col-6 col-sm-3 align-items-center img-hover-zoom img-hover-zoom--xyz" data-aos="fade-right" data-aos-duration="3000">
-				<img src="Abhi_Image3.jpg" class="img-fluid rounded-3 about-img">
+			<div class="col-6 col-sm-3  align-items-center img-hover-zoom img-hover-zoom--xyz" data-aos="fade-right" data-aos-duration="3000">
+				<img src="Abhi_Image3.jpg" class="img-fluid rounded-3 row-img">
 			</div>
+			
 		</div>
 
+		<hr class="dropdown-divider">
+
+		<!-- <div class="row justify-content-center parallax-img" id="fixed-matrix"></div> -->
+		
 		<div class="row justify-content-center" id="education">
-			<hr class="dropdown-divider">
-			<div class="col-6 col-sm-3 align-items-center img-hover-zoom img-hover-zoom--xyz" data-aos="fade-left" data-aos-duration="2500">
-				<img src="University of Nottingham.jpg" class="img-fluid rounded-3 about-img">
+			
+			<div class="col-6 col-sm-3  align-items-center img-hover-zoom img-hover-zoom--xyz" data-aos="fade-left" data-aos-duration="2500">
+				<img src="University of Nottingham.jpg" class="img-fluid rounded-3 row-img">
 			</div>
-			<div class="col-6 col-sm-3 align-items-center">
+			<div class="col-6 col-sm-3  align-items-center">
 				<p>I'm currently studying in the University of Nottingham Malaysia pursuing a degree in Software Engineering of which I am currently in the 2nd year and I'm expected to graduate in the summer of 2022.</p>
 			</div>
 		</div>
 
+		<hr class="dropdown-divider">
+
+		<!-- <div class="row justify-content-center parallax-img" id="fixed-code"></div> -->
+
 		<div class="row justify-content-center" id="experience">
-			<hr class="dropdown-divider">
-			<div class="col-6 col-sm-3 align-items-center">
+			
+			<div class="col-6 col-sm-3  align-items-center">
 				<p>I have held the titles of LYFE Youth Experience Project Director as well as IT Supervisor for Earth Hour Brunei. Both these positions have helped me improve my confidence in working with teams as well as the respective coding skills. For more information, feel free to ask for my resume.</p>
 			</div>
-			<div class="col-6 col-sm-3 align-items-center img-hover-zoom img-hover-zoom--xyz" data-aos="fade-right" data-aos-duration="3000">
-				<img src="Work.jpg" class="img-fluid rounded-3 about-img">
+			<div class="col-6 col-sm-3  align-items-center img-hover-zoom img-hover-zoom--xyz" data-aos="fade-right" data-aos-duration="3000">
+				<img src="Work.jpg" class="img-fluid rounded-3 row-img">
 			</div>
 		</div>
 
+		<hr class="dropdown-divider">
+
+		<!-- <div class="row justify-content-center parallax-img" id="fixed-codingLady"></div> -->
+
 		<div class="row justify-content-center" id="projects">
-			<hr class="dropdown-divider">
-			<div class="col-6 col-sm-3 align-items-center img-hover-zoom img-hover-zoom--xyz" data-aos="fade-left" data-aos-duration="2500">
-				<img src="GitHub-logo1.jpg" class="img-fluid rounded-3 about-img">
+			
+			<div class="col-6 col-sm-3  align-items-center img-hover-zoom img-hover-zoom--xyz" data-aos="fade-left" data-aos-duration="2500">
+				<img src="GitHub-logo1.jpg" class="img-fluid rounded-3 row-img">
 			</div>
-			<div class="col-6 col-sm-3 align-items-center">
+			<div class="col-6 col-sm-3  align-items-center">
 				<p>I have a wide variety of projects at my disposal through years of training and experience in the computer science field which range from maintenance of games with JavaFX to Python Web scraping scripts. Check out any one of my projects on GitHub!</p>
 			</div>
 		</div>
