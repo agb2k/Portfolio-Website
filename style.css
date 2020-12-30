@@ -1,6 +1,6 @@
 html {
   --scrollbarBG: #292b2c;
-  --thumbBG: 	#c0b9b9;
+  --thumbBG: #c0b9b9;
 }
 body::-webkit-scrollbar {
   width: 16px;
@@ -87,8 +87,8 @@ img.logo {
 }
 
 .img-hover-zoom--xyz img {
-  transition: transform 0.5s, filter 1.5s ease-in-out;
-  filter: grayscale(70%);
+  transition: transform 0.5s, filter 1s ease-in-out;
+  filter: grayscale(80%);
 }
 
 .img-hover-zoom--xyz:hover img {
@@ -99,6 +99,7 @@ img.logo {
 #pausePlay {
   padding: 0.7rem;
   font-size: 8vw;
+  color: whitesmoke;
 }
 
 .row {
