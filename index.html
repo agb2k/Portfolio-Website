@@ -32,6 +32,7 @@
 
   <body>
     <header>
+      <!-- Navbar -->
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a
@@ -96,9 +97,11 @@
                   Contact
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Linkedin</a></li>
+                  <li><a class="dropdown-item" href="#linkedin">Linkedin</a></li>
                   <li></li>
-                  <li><a class="dropdown-item" href="#">GitHub</a></li>
+                  <li><a class="dropdown-item" href="#github">GitHub</a></li>
+                  <li></li>
+                  <li><a class="dropdown-item" href="#mail">Mail</a></li>
                 </ul>
               </li>
             </ul>
@@ -117,6 +120,7 @@
         </div>
       </nav>
 
+      <!-- Background Image, text and play/pause button -->
       <div class="parallax-img bg-dark" id="intro">
         <div class="heading-content text-center">
           <h2 class="intro-text">
@@ -139,8 +143,9 @@
 
     <section>
       <div class="container-fluid bg-dark text-light">
-        <div class="row justify-content-center" id="about-me">
-          <div class="col-6 col-sm-3 align-items-center">
+        <!-- About Me row -->
+        <div class="row justify-content-center " id="about-me">
+          <div class="col-6 col-sm-3 align-items-center   ">
             <p>
               I'm a driven and independent 2nd year Computer Science student
               with knowledge & experience programming in Full Stack Web
@@ -148,7 +153,7 @@
             </p>
           </div>
           <div
-            class="col-6 col-sm-3 align-items-center img-hover-zoom img-hover-zoom--xyz"
+            class="col-6 col-sm-3 align-items-center   img-hover-zoom img-hover-zoom--xyz"
             data-aos="fade-right"
             data-aos-duration="3000"
           >
@@ -160,9 +165,10 @@
 
         <!-- <div class="row justify-content-center parallax-img" id="fixed-matrix"></div> -->
 
+        <!-- Education row -->
         <div class="row justify-content-center" id="education">
           <div
-            class="col-6 col-sm-3 align-items-center img-hover-zoom img-hover-zoom--xyz"
+            class="col-6 col-sm-3 align-items-center img-hover-zoom img-hover-zoom--xyz "
             data-aos="fade-left"
             data-aos-duration="2500"
           >
@@ -185,8 +191,9 @@
 
         <!-- <div class="row justify-content-center parallax-img" id="fixed-code"></div> -->
 
+        <!-- Experience row -->
         <div class="row justify-content-center" id="experience">
-          <div class="col-6 col-sm-3 align-items-center">
+          <div class="col-6 col-sm-3 align-items-center  ">
             <p>
               I have held the titles of LYFE Youth Experience Project Director
               as well as IT Supervisor for Earth Hour Brunei. Both these
@@ -196,7 +203,7 @@
             </p>
           </div>
           <div
-            class="col-6 col-sm-3 align-items-center img-hover-zoom img-hover-zoom--xyz"
+            class="col-6 col-sm-3 align-items-center   img-hover-zoom img-hover-zoom--xyz"
             data-aos="fade-right"
             data-aos-duration="3000"
           >
@@ -208,15 +215,16 @@
 
         <!-- <div class="row justify-content-center parallax-img" id="fixed-codingLady"></div> -->
 
+        <!-- Projects row -->
         <div class="row justify-content-center" id="projects">
           <div
-            class="col-6 col-sm-3 align-items-center img-hover-zoom img-hover-zoom--xyz"
+            class="col-6 col-sm-3 align-items-center   img-hover-zoom img-hover-zoom--xyz"
             data-aos="fade-left"
             data-aos-duration="2500"
           >
             <img src="GitHub-logo1.jpg" class="img-fluid rounded-3 row-img" />
           </div>
-          <div class="col-6 col-sm-3 align-items-center">
+          <div class="col-6 col-sm-3 align-items-center  ">
             <p>
               I have a wide variety of projects at my disposal through years of
               training and experience in the computer science field which range
@@ -224,8 +232,38 @@
               scripts. Check out any one of my projects on GitHub!
             </p>
           </div>
-        </div>
       </div>
+
+      <hr class="dropdown-divider" />
+
+      <!-- Social media row -->
+      <div class="row justify-content-center" id="socials">
+        <div class="col-12 col-sm-6 ">
+          <p>
+            Feel free to check me out on GitHub or Linkedin linked below or contact me on my socials!
+          </p>
+        </div> 
+    </div>
+
+    <div class="row justify-content-center" id="socials-img">
+      <div class="col-4 col-sm-2 text-center">
+        <a href="https://github.com/agb2k">
+        <i class="fab fa-github-square fa-7x" id="github"></i>
+        </a>
+      </div>
+      <div class="col-4 col-sm-2 text-center">
+        <a href="mailto:abhinav.basil@gmail.com">
+          <i class="fas fa-envelope-square fa-7x"  id="mail"></i>
+        </a>
+      </div>
+      <div  class="col-4 col-sm-2 text-center">
+        <a href="https://www.linkedin.com/in/agb2k/">
+          <i  class="fab fa-linkedin fa-7x"  id="linkedin"></i>
+        </a>
+      </div>
+  </div>
+
+    
     </section>
 
     <script

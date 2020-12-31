@@ -25,12 +25,14 @@ body::-webkit-scrollbar-thumb {
 
 #intro {
   background-image: url("typing1.jpg");
-  height: 60vw;
+  height: 100vh;
+
+
 }
 
 .parallax-img {
   background-attachment: fixed;
-  background-position: 25%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -87,8 +89,8 @@ img.logo {
 }
 
 .img-hover-zoom--xyz img {
-  transition: transform 0.5s, filter 1s ease-in-out;
-  filter: grayscale(80%);
+  transition: transform 0.5s, filter 0.5s ease-in-out;
+  filter: grayscale(30%);
 }
 
 .img-hover-zoom--xyz:hover img {
@@ -109,6 +111,19 @@ img.logo {
 #about-me {
   padding-top: 1.5rem;
 }
+
+#github{
+  color:#f5f5f5;
+}
+
+#linkedin{
+  color: #0e76a8;
+}
+
+#mail{
+  color: #fa8072;
+}
+
 
 /* #fixed-matrix{
 	background-image: url("matrixCode.jpg");
