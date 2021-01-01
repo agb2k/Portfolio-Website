@@ -11,3 +11,7 @@ function playPause() {
     document.getElementById("pausePlay").className = "fas fa-play-circle fa-4x";
   }
 }
+
+window.addEventListener('load', () =>{
+  $(".loader-wrapper").fadeOut("slow");
+})
