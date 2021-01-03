@@ -1,248 +1,189 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abhinav's Portfolio</title>
-    <script
-      src="https://kit.fontawesome.com/ca8c6c3503.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/ca8c6c3503.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" href="tabLogo.png?" />
-  </head>
 
-  <body>
-    <header>
-      <!-- Navbar -->
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a
-            class="navbar-brand"
-            href="#intro"
-            style="position: relative; left: 30px"
-            ><img class="logo" src="logo1.png"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#intro">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about-me">About Me</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#education"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Experience & Past Projects
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#education">Education</a>
-                  </li>
-                  <li></li>
-                  <li>
-                    <a class="dropdown-item" href="#experience">Experience</a>
-                  </li>
-                  <li></li>
-                  <li>
-                    <a class="dropdown-item" href="#projects">Projects</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#contacts"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Contact
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#linkedin">Linkedin</a></li>
-                  <li></li>
-                  <li><a class="dropdown-item" href="#github">GitHub</a></li>
-                  <li></li>
-                  <li><a class="dropdown-item" href="#mail">Mail</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhinav's Portfolio</title>
+  <script src="https://kit.fontawesome.com/ca8c6c3503.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/ca8c6c3503.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" href="tabLogo.png?" />
+</head>
 
-      <!-- Background Image, text and play/pause button -->
-      <div class="parallax-img bg-dark" id="intro">
-        <div class="heading-content text-center">
-          <h2 class="intro-text">
-            <span class="multicolouredtext2">Hey there!</span>
-          </h2>
-          <h1 class="intro-text">
-            <span class="multicolouredtext">I'm Abhinav</span>
-          </h1>
-          <h3 class="intro-text">
-            <span class="multicolouredtext">Student/Developer</span>
-          </h3>
-          <i
-            onclick="playPause()"
-            class="fas fa-pause-circle fa-4x"
-            id="pausePlay"
-          ></i>
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#intro" style="position: relative; left: 30px"><img class="logo"
+            src="logo1.png" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#intro">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About Me</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#education" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Experience & Past Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#education">Education</a>
+                </li>
+                <li></li>
+                <li>
+                  <a class="dropdown-item" href="#experience">Experience</a>
+                </li>
+                <li></li>
+                <li>
+                  <a class="dropdown-item" href="#projects">Projects</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#contacts" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Contact
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#linkedin">Linkedin</a></li>
+                <li></li>
+                <li><a class="dropdown-item" href="#github">GitHub</a></li>
+                <li></li>
+                <li><a class="dropdown-item" href="#mail">Mail</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
       </div>
-    </header>
+    </nav>
 
-    <section>
-      <div class="container-fluid bg-dark text-light">
-        <!-- About Me row -->
-        <div class="row justify-content-center " id="about-me">
-          <div class="col-6 col-sm-3 align-items-center   ">
-            <p>
-              I'm a driven and independent 2nd year Computer Science student
-              with knowledge & experience programming in Full Stack Web
-              Development, Python, C, Java & SQL with experience in the IT Field
-            </p>
-          </div>
-          <div
-            class="col-6 col-sm-3 align-items-center   img-hover-zoom img-hover-zoom--xyz"
-            data-aos="fade-right"
-            data-aos-duration="3000"
-          >
-            <img src="Abhi_Image3.jpg" class="img-fluid rounded-3 row-img" />
-          </div>
+    <!-- Background Image, text and play/pause button -->
+    <div class="parallax-img bg-dark" id="intro">
+      <div class="heading-content text-center">
+        <h2 class="intro-text">
+          <span class="multicolouredtext2">Hey there!</span>
+        </h2>
+        <h1 class="intro-text">
+          <span class="multicolouredtext">I'm Abhinav</span>
+        </h1>
+        <h3 class="intro-text">
+          <span class="multicolouredtext">Student/Developer</span>
+        </h3>
+        <i onclick="playPause()" class="fas fa-pause-circle fa-4x" id="pausePlay"></i>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container-fluid bg-dark text-light">
+      <!-- About Me row -->
+      <div class="row justify-content-center " id="about-me">
+        <div class="col-6 col-sm-3 align-items-center   ">
+          <p>
+            I'm a driven and independent 2nd year Computer Science student
+            with knowledge & experience programming in Full Stack Web
+            Development, Python, C, Java & SQL with experience in the IT Field
+          </p>
         </div>
-
-        <hr class="dropdown-divider" />
-
-        <!-- <div class="row justify-content-center parallax-img" id="fixed-matrix"></div> -->
-
-        <!-- Education row -->
-        <div class="row justify-content-center" id="education">
-          <div
-            class="col-6 col-sm-3 align-items-center img-hover-zoom img-hover-zoom--xyz "
-            data-aos="fade-left"
-            data-aos-duration="2500"
-          >
-            <img
-              src="University of Nottingham.jpg"
-              class="img-fluid rounded-3 row-img"
-            />
-          </div>
-          <div class="col-6 col-sm-3 align-items-center">
-            <p>
-              I'm currently studying in the University of Nottingham Malaysia
-              pursuing a degree in Software Engineering of which I am currently
-              in the 2nd year and I'm expected to graduate in the summer of
-              2022.
-            </p>
-          </div>
+        <div class="col-6 col-sm-3 align-items-center   img-hover-zoom img-hover-zoom--xyz" data-aos="fade-right"
+          data-aos-duration="3000">
+          <img src="Abhi_Image3.jpg" class="img-fluid rounded-3 row-img" />
         </div>
+      </div>
 
-        <hr class="dropdown-divider" />
+      <hr class="dropdown-divider" />
 
-        <!-- <div class="row justify-content-center parallax-img" id="fixed-code"></div> -->
+      <!-- <div class="row justify-content-center parallax-img" id="fixed-matrix"></div> -->
 
-        <!-- Experience row -->
-        <div class="row justify-content-center" id="experience">
-          <div class="col-6 col-sm-3 align-items-center  ">
-            <p>
-              I have held the titles of LYFE Youth Experience Project Director
-              as well as IT Supervisor for Earth Hour Brunei. Both these
-              positions have helped me improve my confidence in working with
-              teams as well as the respective coding skills. For more
-              information, feel free to ask for my resume.
-            </p>
-          </div>
-          <div
-            class="col-6 col-sm-3 align-items-center   img-hover-zoom img-hover-zoom--xyz"
-            data-aos="fade-right"
-            data-aos-duration="3000"
-          >
-            <img src="Work.jpg" class="img-fluid rounded-3 row-img" />
-          </div>
+      <!-- Education row -->
+      <div class="row justify-content-center" id="education">
+        <div class="col-6 col-sm-3 align-items-center img-hover-zoom img-hover-zoom--xyz " data-aos="fade-left"
+          data-aos-duration="2500">
+          <img src="University of Nottingham.jpg" class="img-fluid rounded-3 row-img" />
         </div>
-
-        <hr class="dropdown-divider" />
-
-        <!-- <div class="row justify-content-center parallax-img" id="fixed-codingLady"></div> -->
-
-        <!-- Projects row -->
-        <div class="row justify-content-center" id="projects">
-          <div
-            class="col-6 col-sm-3 align-items-center   img-hover-zoom img-hover-zoom--xyz"
-            data-aos="fade-left"
-            data-aos-duration="2500"
-          >
-            <img src="GitHub-logo1.jpg" class="img-fluid rounded-3 row-img" />
-          </div>
-          <div class="col-6 col-sm-3 align-items-center  ">
-            <p>
-              I have a wide variety of projects at my disposal through years of
-              training and experience in the computer science field which range
-              from maintenance of games with JavaFX to Python Web scraping
-              scripts. Check out any one of my projects on GitHub!
-            </p>
-          </div>
+        <div class="col-6 col-sm-3 align-items-center">
+          <p>
+            I'm currently studying in the University of Nottingham Malaysia
+            pursuing a degree in Software Engineering of which I am currently
+            in the 2nd year and I'm expected to graduate in the summer of
+            2022.
+          </p>
         </div>
+      </div>
 
-        <hr class="dropdown-divider" />
+      <hr class="dropdown-divider" />
 
-        <!-- Social media row -->
+      <!-- <div class="row justify-content-center parallax-img" id="fixed-code"></div> -->
+
+      <!-- Experience row -->
+      <div class="row justify-content-center" id="experience">
+        <div class="col-6 col-sm-3 align-items-center  ">
+          <p>
+            I have held the titles of LYFE Youth Experience Project Director
+            as well as IT Supervisor for Earth Hour Brunei. Both these
+            positions have helped me improve my confidence in working with
+            teams as well as the respective coding skills. For more
+            information, feel free to ask for my resume.
+          </p>
+        </div>
+        <div class="col-6 col-sm-3 align-items-center   img-hover-zoom img-hover-zoom--xyz" data-aos="fade-right"
+          data-aos-duration="3000">
+          <img src="Work.jpg" class="img-fluid rounded-3 row-img" />
+        </div>
+      </div>
+
+      <hr class="dropdown-divider" />
+
+      <!-- <div class="row justify-content-center parallax-img" id="fixed-codingLady"></div> -->
+
+      <!-- Projects row -->
+      <div class="row justify-content-center" id="projects">
+        <div class="col-6 col-sm-3 align-items-center   img-hover-zoom img-hover-zoom--xyz" data-aos="fade-left"
+          data-aos-duration="2500">
+          <img src="GitHub-logo1.jpg" class="img-fluid rounded-3 row-img" />
+        </div>
+        <div class="col-6 col-sm-3 align-items-center  ">
+          <p>
+            I have a wide variety of projects at my disposal through years of
+            training and experience in the computer science field which range
+            from maintenance of games with JavaFX to Python Web scraping
+            scripts. Check out any one of my projects on GitHub!
+          </p>
+        </div>
+      </div>
+
+      <hr class="dropdown-divider" />
+
+      <!-- Social media row -->
       <div class="row justify-content-center" id="socials">
         <div class="col-12 col-sm-6 ">
           <p>
             Feel free to check me out on GitHub or Linkedin linked below or contact me on my socials!
           </p>
-        </div> 
+        </div>
       </div>
 
 
@@ -254,45 +195,66 @@
         </div>
         <div class="col-4 col-sm-2 text-center">
           <a href="mailto:abhinav.basil@gmail.com">
-            <i class="fas fa-envelope-square fa-7x"  id="mail"></i>
+            <i class="fas fa-envelope-square fa-7x" id="mail"></i>
           </a>
         </div>
-        <div  class="col-4 col-sm-2 text-center">
+        <div class="col-4 col-sm-2 text-center">
           <a href="https://www.linkedin.com/in/agb2k/">
-            <i  class="fab fa-linkedin fa-7x"  id="linkedin"></i>
+            <i class="fab fa-linkedin fa-7x" id="linkedin"></i>
           </a>
         </div>
       </div>
 
-      
+      <!-- Enquiry Form -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6">
+          <form>
+            <div class="mt-2 mb-3">
+              <h3>Enquiry Form:</h3>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address:</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
 
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Telephone Number:</label>
+              <input type="tel" class="form-control" id="phoneNum" aria-describedby="phoneHelp">
+            </div>
 
-    
-    </section>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Enquiry</label>
+              <textarea type="tel" class="form-control" rows="5" id="enquiry" aria-describedby="enquiryHelp"></textarea>
+            </div>
 
-    <!-- Loading Screen -->
-    <div class="container-fluid loader-wrapper">
-      <div class="row justify-content-center load-content">
-        <div class="spinner-grow text-primary m-2 load" role="status"></div>
-        <div class="spinner-grow text-secondary m-2 load" role="status"></div>
-        <div class="spinner-grow text-success m-2 load" role="status"></div>
-        <div class="spinner-grow text-danger m-2 load" role="status"></div>
+            <button type="submit" class="btn btn-primary mb-3">Submit</button>
+          </form>
+        </div>
       </div>
-      <div class="row justify-content-center text-center load-content">
-        <h1 class="load" id="loading">Loading...</h1>
-      </div>
-    </div>
 
-    </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+  </section>
+
+  <!-- Loading Screen -->
+  <div class="container-fluid loader-wrapper">
+    <div class="row justify-content-center load-content">
+      <div class="spinner-grow text-primary m-2 load" role="status"></div>
+      <div class="spinner-grow text-secondary m-2 load" role="status"></div>
+      <div class="spinner-grow text-success m-2 load" role="status"></div>
+      <div class="spinner-grow text-danger m-2 load" role="status"></div>
+    </div>
+    <div class="row justify-content-center text-center load-content">
+      <h1 class="load" id="loading">Loading...</h1>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>

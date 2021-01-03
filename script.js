@@ -12,6 +12,6 @@ function playPause() {
   }
 }
 
-window.addEventListener('load', () =>{
+window.addEventListener("load", () => {
   $(".loader-wrapper").fadeOut("slow");
-})
+});
