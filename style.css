@@ -122,6 +122,10 @@ img.logo {
   color: #fa8072;
 }
 
+#resume {
+  color: #808080;
+}
+
 .loader-wrapper {
   background-color: #242f3f;
   width: 100%;
@@ -145,18 +149,3 @@ img.logo {
   top: 50%;
   transform: translate(0, 400%);
 }
-
-/* #fixed-matrix{
-	background-image: url("matrixCode.jpg");
-	height: 30vw;
-}
-
-#fixed-code{
-	background-image: url("code.jpg");
-	height: 30vw;
-}
-
-#fixed-codingLady{
-	background-image: url("codingLady.jpg");
-	height: 30vw;
-} */

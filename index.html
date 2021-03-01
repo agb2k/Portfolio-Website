@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abhinav's Portfolio</title>
   <script src="https://kit.fontawesome.com/ca8c6c3503.js" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-  <script src="https://kit.fontawesome.com/ca8c6c3503.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap" rel="stylesheet" />
@@ -67,6 +66,8 @@
                 <li><a class="dropdown-item" href="#github">GitHub</a></li>
                 <li></li>
                 <li><a class="dropdown-item" href="#mail">Mail</a></li>
+                <li></li>
+                <li><a class="dropdown-item" href="#resume">Resume</a></li>
               </ul>
             </li>
           </ul>
@@ -179,7 +180,7 @@
 
       <!-- Social media row -->
       <div class="row justify-content-center" id="socials">
-        <div class="col-12 col-sm-6 ">
+        <div class="col-12 col-sm-7 ">
           <p>
             Feel free to check me out on GitHub or Linkedin linked below or contact me on my socials!
           </p>
@@ -188,43 +189,50 @@
 
 
       <div class="row justify-content-center" id="socials-img">
-        <div class="col-4 col-sm-2 text-center">
-          <a href="https://github.com/agb2k">
+        <div class="col-3 col-sm-3 col-md-2 text-center">
+          <a href="https://github.com/agb2k" target="_blank">
             <i class="fab fa-github-square fa-7x" id="github"></i>
           </a>
         </div>
-        <div class="col-4 col-sm-2 text-center">
-          <a href="mailto:abhinav.basil@gmail.com">
+        <div class="col-3 col-sm-3 col-md-2 text-center">
+          <a href="mailto:abhinav.basil@gmail.com" target="_blank">
             <i class="fas fa-envelope-square fa-7x" id="mail"></i>
           </a>
         </div>
-        <div class="col-4 col-sm-2 text-center">
-          <a href="https://www.linkedin.com/in/agb2k/">
+        <div class="col-3 col-sm-3 col-md-2 text-center">
+          <a href="https://www.linkedin.com/in/agb2k/" target="_blank">
             <i class="fab fa-linkedin fa-7x" id="linkedin"></i>
+          </a>
+        </div>
+        <div class="col-3 col-sm-3 col-md-2 text-center">
+          <a href="download.php?file=Abhinav's_resume" target="_blank">
+            <i class="fas fa-download fa-7x" id="resume"></i>
           </a>
         </div>
       </div>
 
       <!-- Enquiry Form -->
       <div class="row justify-content-center">
-        <div class="col-12 col-sm-6">
-          <form>
+        <div class="col-12 col-sm-7">
+          <form action="insert.php" method="POST">
             <div class="mt-2 mb-3">
               <h3>Enquiry Form:</h3>
             </div>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address:</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
             </div>
 
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Telephone Number:</label>
-              <input type="tel" class="form-control" id="phoneNum" aria-describedby="phoneHelp">
+              <input type="tel" class="form-control" id="phoneNum" name="phoneNum" aria-describedby="phoneHelp"
+                required>
             </div>
 
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Enquiry</label>
-              <textarea type="tel" class="form-control" rows="5" id="enquiry" aria-describedby="enquiryHelp"></textarea>
+              <textarea type="tel" class="form-control" rows="5" id="enquiry" name="enquiry"
+                aria-describedby="enquiryHelp" required></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary mb-3">Submit</button>
