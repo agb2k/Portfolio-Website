@@ -3,11 +3,12 @@ html {
   --thumbBG: #c0b9b9;
 }
 body::-webkit-scrollbar {
-  width: 16px;
+  width: 16px
 }
 body {
   scrollbar-width: auto;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  margin: 0;
 }
 body::-webkit-scrollbar-track {
   background: var(--scrollbarBG);
@@ -148,4 +149,7 @@ img.logo {
   display: absolute;
   top: 50%;
   transform: translate(0, 400%);
+}
+#socials-img > div{
+  padding-right: auto;
 }
